@@ -4,48 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aman Gym</title>
-    <link rel="stylesheet" href="aman.css">
+    <title>Framed structure vs. Load-Bearing</title>
+    <link rel="stylesheet" href="amancss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/8657bfbbbe.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <nav class="navi">
+   
+        <nav>
+            <div class="text">
+  <p>FAQs</p>
+  <div class="imgp">
+  <img src="https://designeverest.com/lounge/public/images/phone.svg" alt="">
+</div>
+  <p>(888)311-3015</p>
+  <button class="btn">Contact Us</button>
+            </div>
 
-        <div class="left">
-<img src="data:image/jpeg;base64,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">
+            <div class="textdown">
+                <img class="logo_lg" src="https://designeverest.com/lounge/public/images/logo.png" alt="Design Everest">
+                
+            </div>
+        </nav>
+  
+
+    <div class="afternav">
+
+
+   <div class="afternavcon">
+
+    <div class="firstone">
+        <p>Frame Structures vs. Load-Bearing Structure</p>
+        <button class="like">   like
+        </button>
+<button class="share">share</button>
+    </div>
+
+    <div class="secondone">
+        <img src="https://designeverest.com/lounge/assets/uploads/images/co_brand_1/users/small/1637253718-gloria-profile-jpg.jpg" alt="">
+        <h4>Aman deep</h4>
+        <button>Follow</button>
+
+    </div>
+   </div>
+
+  
+
+
+
+
+    </div>
+   
+
+    <div class="textconatiner">
+
+        <div class="textarea">
+            <h6>Frame Structures vs. Load-Bearing Structure</h6>
+<p>A superstructure is the part of the building above the ground floor and does not include the foundation or the plinth level. A superstructure in construction is the upper portion of the building, and the foundation and everything below it makes up the substructure. Superstructures exist in many forms - buildings, bridges, and tunnels - but they all have something in common: they sit on top of a foundation or base structure. These superstructures are classified into load-bearing and frame structures based on the method of load. 
+
+    When planning your next construction project, there are plenty of options to choose from when it comes to foundation systems. Framed foundations are the most common type of foundation used in residential construction projects today, while load-bearing foundations are typically used in commercial buildings, though they can also be found in more expensive homes with basements. But what’s the difference between framed and load-bearing structures? Read on to find out!</p>
+    <h4>What is a load-bearing structure?</h4>
+    <p>In load-bearing structures, the walls bear the load and transfer it to the foundation structure. Almost all the walls in such a structure take on the load, unlike a frame structure where the walls act only as a partition between rooms and have no load-bearing functions.
+
+        All the walls in a load-bearing structure are provided with individual foundations, which are then connected with deeper sub-soil foundations. Made from brick or stones, the thickness of these load-bearing walls decreases at every floor, with the walls at bottom-most floors being the thickest. These structures are also characterized by a continued pattern of walls, one below the other for support. 
+        
+        The load-bearing structure was popular until the 1900s and offered limited opportunities for windows or ventilation elements to avoid any compromise to the load-bearing capabilities. Buildings that feature load-bearing structures cannot have any changes made to the walls at any point. One of the biggest advantages frame structures have over load-bearing ones is that the frames are more resistant to seismic forces.
+        
+        Due to their complexity, load-bearing structures usually rely on a foundation onto which the weight is transferred. To ensure that their structure is safe, a structural engineer will assess each individual piece of support for weaknesses or failures. The engineer will determine how much weight each of the load-bearing walls will bear, looking at the design and other factors like the number of people in the house and the intended use of the various parts of the house.
+        
+        Design Everest has been helping its clients create safe, sustainable, and compliant homes and other buildings. The company has created a strong position in California’s construction services market with its exemplary work in the industry for over 15 years. It offers an array of services and can help you with questions like- What type of structure is ideal for your project? Or which foundation is used in load-bearing structures?</p>
+
 
         </div>
-
-        <div class="middle">
-<ul class="lists">
-  <li><a class="aa" href="#">Home</a></li>
-  <li> <a class="aa" href="#" >About us</a></li>
-  <li> <a class="aa" href="#" >Fitness Calculator</a></li>
-  <li> <a class="aa" href="#" >Contact Us</a></li>
-
-
-</ul>
-        </div>
-
-        <div class="right">
-<p>call us  now</p>
-<p>Email Us</p>
+        <div class="picsarea">
+            <img src="https://storage.googleapis.com/de-lounge/assets/uploads/images/co_brand_1/article/2022/load-wall-2-1-1641324385.jpg" alt="">
 
         </div>
-    </nav>
-
-    <div class="forms">
-<h2 class="aman uu" >Join the best gym of kota gym</h2>
-
-<form action="none" class=" formschild">
-
-<input type="text" class="aman" placeholder="                          Enter your name">
-<input type="text" class="aman" placeholder="                          Enter your Age">
-<input type="text" class="aman" placeholder="                          Enter your Gender">
-<input type="text" class="aman" placeholder="                          Enter your Locality ">
-<input type="button" value="submit" class="aman vikas">            
-
-</form>
-
     </div>
 </body>
 </html>

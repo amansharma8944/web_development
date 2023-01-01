@@ -1,0 +1,52 @@
+.nav-content{
+    flex-direction: column;
+
+}
+
+.welcome-section:before {
+
+    top: -116px;
+    height: 81vh;
+}
+.welcome-section{
+  
+}
+
+.navigation-list li{
+
+
+}
+
+.welcome-text-content h1{
+font-size: 50px;
+justify-content: space-around;
+}
+
+.welcome-text-content p{
+    font-size: 19px;
+
+}
+
+.services-pics{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.service-pic-height{
+    margin-top: 66px;
+    margin-left: 100px;
+}
+
+
+
+.partners-container {
+
+    margin-top: 168vh;
+}
+.partner-logo{
+    flex-wrap:wrap;
+}
+
+.forms-container{
+    margin-top: 234px;
+}
