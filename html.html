@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matrimony</title>
+    <link rel="stylesheet" href="aman.css">
+
+</head>
+<body >
+    
+<div class="navbar" id="hyy">
+
+
+<div class="logo">
+<p class="green" style="display:inline-block;">T</p><p style="display:inline-block;">RAVEL</p>
+
+
+</div>
+<div class="list-container">
+
+<ul>
+
+    <li>Home</li>
+    <li>Contact</li>
+    <li>More</li>
+    <li>Price</li>
+
+</ul>
+
+</div>
+
+
+<div class="tobehide" onclick="clickk()">
+    <span class="yes"></span>
+    <span class="yes"></span>
+    <span class="yes"></span>
+</div>
+
+</div>
+
+
+
+<div class="middle-container">
+
+
+
+    <div class="middle-text">
+        <h1>Discover</h1>
+        <h1>The World</h1>
+        <p class="disc">GET 20% OFF</p>
+        <p class="discc">Enter Voucher Code : <i class="green" style="font-weight:900;">CODFRE</i></p>
+
+        <p class="obs">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Dolores qui dolor nobis ipsa quisquam eligendi quasi doloribus veniam voluptatem odit.</p>
+        <button class="btn">Get Travel</button>
+
+        <button class="btn">Read More</button>
+
+
+
+    </div>
+<div class="middle-pic">
+
+    <img src="photo-1657214058744-7ff3b448c205.avif" alt="">
+</div>
+
+
+</div>
+
+
+
+<div class="onlypics ">
+
+<h1>Our Latest Blog</h1>
+
+<div class="wholee">
+        <div class="one">
+            <img src="stock-photo-nha-trang-vietnam-december-fishing-boats-in-the-port-of-nha-trang-vietnam-1682699443.jpg" alt="">
+
+            <h1>Location</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="one">
+            <img src="stock-photo-nha-trang-vietnam-december-fishing-boats-in-the-port-of-nha-trang-vietnam-1682699443.jpg" alt="">
+
+            <h1>Location</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="one">
+            <img src="stock-photo-nha-trang-vietnam-december-fishing-boats-in-the-port-of-nha-trang-vietnam-1682699443.jpg" alt="">
+
+            <h1>Location</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="one">
+            <img src="stock-photo-nha-trang-vietnam-december-fishing-boats-in-the-port-of-nha-trang-vietnam-1682699443.jpg" alt="">
+
+            <h1>Location</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<div  class="to-display" id="to">
+
+<h1 style="    margin-top: 23px;
+margin-bottom: 27px;
+font-family: cursive;
+border-bottom: 1px solid;
+width: 295px;">Fill Out This Form</h1>
+<form action="" class="for">
+<label for="email">Email</label>
+<input type="email" class="forms" id="email" style="margin-left: 58px;"><br>
+<label for="password">password</label>
+<input type="password"  style="margin-left: 22px;" class="forms" id="password"><br>
+<p class=" btnn btn" id="btnnn" >SignUp</p>
+
+</form>
+
+
+</div>
+
+
+<script >
+    let a=document.getElementById("hyy");
+    let mainn=document.querySelector("body");
+    console.log(mainn);
+
+    function clickk(){
+        
+       
+        a.classList.toggle("hidden-navbar");
+        mainn.classList.toggle("blockk");
+
+    }
+
+
+
+
+   let n=document.getElementById("to");
+   let nn=document.getElementById("btnnn");
+ n.style.display="none";
+
+   let timee=setTimeout("aaman()",2000);
+
+
+   function aaman(){
+    n.style.display="block";
+   }
+   
+   
+   nn.addEventListener("click",amn);
+
+
+   function amn(){
+        
+    n.style.display="none";
+    n.classList.remove("to-display");
+
+
+   }
+   
+
+
+   let wi=window.innerWidth;
+   if(wi<1173.6){
+    clearTimeout(timee);
+    
+   }
+ 
+
+</script>
+</body>
+</html>
