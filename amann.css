@@ -1,0 +1,478 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow:inherit;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navigation-container{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("banner.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: inline-block;
+}
+
+.navigation-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    position: relative;
+}
+
+.eduford img{
+    height: 50px;
+}
+/* list */
+.nav-list li {
+
+    list-style: none;
+}
+
+.nav-list li::after {
+    content: '';
+    width: 0%;
+    background-color: brown;
+    height: 2px;
+    display: block;
+    margin: auto;}
+
+    .nav-list li:hover::after{
+        width:100%;
+        transition: 0.5s;
+        height:2px;
+    }
+.nav-list li a{
+    text-decoration: none;
+    color:white;
+
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 625px;
+    padding-right: 85px;
+    font-size: 1.4rem;
+   
+}
+
+.text-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:89vh;
+    align-items: center;
+
+}
+
+.text-middle h1 {
+    position: relative;
+    top: -98px;
+    font-size: 4.3rem;
+    color:white;
+}
+.text-middle p {
+    position: relative;
+    width: 727px;
+    text-align: center;
+    top: -19px;
+    color:white;
+}
+.middle-btn {
+    width: 19vw;
+    position: relative;
+    top: 47px;
+    height: 6vh;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 1rem;
+}
+.middle-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/*courses contianer */
+.courses-container {
+    /* min-height: 50vh; */
+    height: 552px;
+    
+}
+
+
+.h1-courses{
+   position: relative;
+   top: 77px;
+   font-size: 44px;
+}
+.courses-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.courses-container>p {
+    position: relative;
+    top: 116px;
+    font-size: 17px;
+}
+.courses-pics {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    height: 30vh;
+    width: 98vw;
+    margin-top: 179px;;
+}
+.courses-pics div {
+    /* border: 1px solid red; */
+    background: rgb(255,192,203,0.3);
+    height: 170px;
+    width: 391px;
+    text-align: center;
+    padding-top: 28px;
+    padding: 28px 18px;
+
+}
+.courses-pics div h1{
+    font-size: 2 rem;
+}
+
+/* global campus conatiner */
+.global-campus-container{
+    height:100vh;
+    width:100%;
+
+display: flex;
+justify-content: center;
+padding-top: 123px;
+text-align:center;
+flex-direction:column;
+
+}
+.global-content p{
+    margin-top: 21px;
+}
+
+.pic-global-container{
+    display: flex;
+    /* border: 1px solid red; */
+    height:80vh;
+    width:94%;
+    margin:58px;
+}
+
+.global-pics {
+    width: 364px;
+    height: 542px;
+    margin: 10px;
+    /* border: 1px solid red; */
+    border-radius:14px;
+    position:relative;
+}
+.global-pics1{
+    margin-left: 129px;
+    background-image: url("london.png");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.global-pics2{ background-image: url("newyork.png");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;}
+.global-pics3{ background-image: url("washington.png");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;}
+
+    .global-pics1::before {
+        content: "Paris";
+        background: red;
+        color: white;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        line-height: 72vh;
+        font-size: 44px;
+        vertical-align: middle;
+        width: 100%;
+        left: -1px;
+        border-radius: 17px;
+        height: 0%;
+        opacity: 0.4;
+        top: 72vh;
+        transition: all 0.5s;
+    }
+
+    .global-pics1:hover::before{
+        width:100.5%;
+        top:0vh;
+
+        height:100%;
+}
+
+
+
+
+
+.global-pics2::before {
+    content: "New York";
+    background: red;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    line-height: 72vh;
+    font-size: 44px;
+    vertical-align: middle;
+    width: 100%;
+    left: -1px;
+    border-radius: 17px;
+    height: 0%;
+    opacity: 0.4;
+    top: 72vh;
+    transition: all 0.5s;
+}
+
+.global-pics2:hover::before{
+    width:100.5%;
+    top:0vh;
+
+    height:100%;
+
+    
+}
+
+.global-pics3::before {
+    content: "London";
+    background: red;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    line-height: 72vh;
+    font-size: 44px;
+    vertical-align: middle;
+    width: 100%;
+    left: -1px;
+    border-radius: 17px;
+    height: 0%;
+    opacity: 0.4;
+    top: 72vh;
+    transition: all 0.5s;
+}
+
+.global-pics3:hover::before{
+    width:100.5%;
+    top:0vh;
+
+    height:100%;
+
+    
+}
+
+/* facilities container */
+.facilities-container{
+    height:100vh;
+    width:99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.facility-text{
+    margin-top: 60px;
+}
+.facimg {
+    /* border: 1px solid red; */
+   
+    height: 438px;
+
+    display: inline-block;
+    width: 360px;
+    margin: 77px 28px 3px 12px;
+text-align:left;
+
+border-radius: 12px;
+overflow: hidden;
+}
+.facimg img{
+    width: 360px;
+    height: 327px;
+    
+
+}
+.facilities-images{
+    display:flex;
+    flex-direction: row;
+    justify-content: auto auto auto;
+    width: 75vw;
+    padding-left: 2%;
+
+
+}
+.facilities-h3{
+    font-size:22px;
+    padding-top:9px;
+}
+.facimg p{
+    
+    opacity: 0.8;
+    position: relative;
+    top: 12px;
+
+}
+.facility-text >p{opacity:0.9;
+font-size: 20px;}
+/* students container */
+.students-container{
+    width:99%;
+    height:71vh;
+    /* border:1px solid blue; */
+   
+
+}
+
+.students-pics{
+    display: flex;
+}
+.aman {
+    margin: 106px;
+    /* border: 1px solid red; */
+    height: 19vh;
+    position: relative;
+}
+.stu1 p, .stu2 p {
+    width: 458px;
+    margin-left: 22px;
+    text-align-last: inherit;
+    display: inline-block;
+}
+.faltu{
+    margin-top:68px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.ha {
+    border-radius: 33px;
+    height: 45px;
+    margin: 4px 0px 0px 9px;
+    display: inline;
+}
+.amanh {
+    position: relative;
+    top: 19px;
+    left: 79px;
+}
+.ckeck{
+    color:orange;
+    /* background-color:aliceblue; */
+  
+}
+.fa{
+position:relative;
+    top: 34px;
+    left: 76px;
+
+}
+.aman::before {
+    content: "";
+    width: 106%;
+    border-radius: 14px;
+    height: 140%;
+    position: absolute;
+    background: #f3cb82;
+    opacity: 0.3;
+    z-index: -1;
+    top: -19px;
+    left: -16px;
+}
+/* enroll contact */
+
+.enroll-content {
+    text-align: center;
+    margin-top: 235px;
+    line-height:1.7;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    flex-direction:column;
+    color:white;
+}
+.enroll-content::before {
+    content: "";
+    width: 87%;
+    height: 267%;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)) ,url("banner2.jpg");
+    opacity: 0.9;
+    left: 100px;
+    z-index: -1;
+    border-radius:25px;
+}
+.enroll-content button{
+    width: 146px;
+    margin-left: 44vw;
+    margin-top: 3vh;
+    height: 43px;
+    background: none;
+    border:1px solid white;
+    color:white;
+}
+.enroll-container{
+    height:59vh;
+
+}
+.enroll-content h1{
+    font-size: 2rem;
+    letter-spacing: 6px;
+
+}
+
+/* about us */
+.about-us{
+    width:97vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.about-us p{
+    width:50vw;
+    margin-left: 51px;
+    text-align:center;
+}
+.about-us h1{
+    margin: 58px;
+}
+.insta img{
+    margin:13px;
+    height: 27px;
+    padding-top:89px;
+}
+.pics-about{
+    height: 130px;
+}
+.about-us h1{
+    font-size:27px;
+}
+.head{
+    font-family: 'Ubuntu', sans-serif;
+}
+.faltu p{
+    padding-top:20px;
+}

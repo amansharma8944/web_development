@@ -1,51 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aman Gym</title>
-    <link rel="stylesheet" href="aman.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WIT University</title>
+    <link rel="stylesheet" href="amann.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" media=" screen and (max-width:360px)" href="mobile.css"> 
 </head>
-<body>
-    <nav class="navi">
-
-        <div class="left">
-<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIYAhgMBIgACEQEDEQH/xAAcAAEAAwACAwAAAAAAAAAAAAAABgcIAQUCAwT/xAA1EAABAwMDAwIEAwgDAQAAAAABAAIDBAURBhIhBzFBE2FRcZGhFCIyFUJSgYKUsdEkNcEj/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8AvFERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQFwXAIeFVfUPqHI2c2PTDzJWOd6ctRFyWu7bGfF2fPj59gtTPGV8tyudFaqN9ZcqmOmp2YDpJDgZPAHz9lTWldJ6zh1bbau5x1rII5hLNNJWbxtHJB/MSc9sYUo65TiPSlLE7fmatYBtHHDHnn6fZMH2t6r6WNX6JnqQzOPXMB2fP4/zwpyyRr2hzDlpGQR5CyORkEfEYWjx+JufTRv7N9T8VUWhvoc7XFxi4+R5VolW4e/0QHKzvSxa60jB+1TDcKakjcA9k8m+P+pm44HjP3VwaJ1pQaqoyYSIK2MZmpnHke7fi33+qYJSiIoCIiAiIgIiICIiCuOrWsH2WgFpt0m2vq2Zkc13MMRyM+xPYfI+yhPSmmttJXvv99rKalp6U+lTGeQN3zEc4z3w3/Psvg6m2u8UuqK6uukEhgqJSYKhoLmFnZrc9gQMDBUSycYJOB2WpODVsVzoJqVlVFW076eT9EzZWljvkc4US6tS2qbRtVHV1UDZsCSjaXAufK3sGjznkZHglZ/JLmBjuWA5DTyAfkhJOMknaMDPgJg86dsbqiFs7i2IyND3Dw3PJ+i1JbK61C1wSUNXSmhaxrYnxyN2BoAAAPbt4WV0OS3aSduc7fGfimajUl8uljpra79tV1HFRVIMRM8rQ2QEcgZ78LPdyjn0jqVs9mrWyRsPrUVVG4PbLEe2SO/lpC6DcdrW5O1v6RngfJcE8AE8A8DPlMxWmtF6kp9UWeOugwyUHZPDnPpSY5Hy8j2KkCp/ofbbvS11bVT08sFumhA/+rS31JAeC0HuAN3PuFcClBERQEREBERARF4SPEbS5zg1oGST4QcTwRVETop4mSxuGHMe0OaR7gqNzdPtKTSb3WSmYTziIFjfoDhdffeptrst3qrbNR1k0lOwOdJDsLXZAPGXe6kemL5BqOzQ3SliliimLg1koG4bXFvgkePigqPqzoykscdJcrPTejSuPozxsJIa7ktdz2B5Hzx8VWy1XfbXT3m0VVuqxmKojLCfLT4I9wef5LLdfSy0FfU0VQCJqaZ8LxjHLSQT8uMrUHoTxlFLel9gjv+qoW1TN9JSN/ESg9nEEBrT7En6Aq1E60J00tcthpq2/0sktZUj1PTc9zBE08tBAI5x3yptbdH6dtczZqGz0kcze0pjDnj5OOSF3gACjWsNaUWk5qKOtpamY1e7YYQ3A2kZzkj+JZVJQuVF9J63t+p31baWCemNM5rXfiNo3k5xjDj8FJwchQcoiICIiAiIgdlCuompbLDpq6W59wgdVVNLLFHFGd5LsYwcZxyfKmqr3qBobTxsl0u8VC2nrIYJqjfCdvqPxuy8fvc/5KCkPUYOxAH4cMAA84HCu/pNe7VBoqkpai4U0M8EkjZI5ZQwgl5cO/fghUf6LM8Z4gD+D5xlTy2waYsvTmlvN1s1NcbjWSvZCydoPLXEd/DQACfc+61UXIb9Zsf8AbUH9yz/az91M9B2tblLSSxyxSuZIHxvDmklgzyPku6j0bqSqom3OHS+n2xOZvbRmmaJHDv8ApP8A67K92pLezTj7BWXPTVlgpashtdTsp92xwdl2HeCWHOOcFpGSkVXCtPohVUFELvNW1dPTvf6TW+tK1mQNx4yfdLhR2a8asgsOjrHaXRRfmrax9NvYwZw7Hjj7njwSuvsk2n6vqFNaK6yWl9tdPJTQO/DAP3g4aS7znBH9QS0XN+3rN5u1B/cs/wBqputd1oK+42aOiq4qh1O2R0picHBocWY5HH7pXj1MOlNOvZbbPp60vuPD5nvpg9sTPAx/EfsPmF1XUTT9HaKbTcsFJDTVFZTf8pkDNjN4DMkNHb9Z+ykEZtNTTw3ainmcBHFcYpnOxnaxrskrSlov9pvMbX22vgn3ZIaHYfgHBO08/ZZptlFDVXOkp5c+nLXxwOwcHa52D/NaK07o6xadf6tsomMqNpYal3Mjmk5wXeRwPolHfoiKAiIgIiIC9VTBFUwvgniZLFI0tex4Ba4HwR5XtRBXF76U0tyutRWU1eKKKZgY2nhpmhsYAA45Hw+HldFrzRVdaNKWaK3mS4MtkkplxHzte7du2jPAPB9uVci4LQTlXRS2p+ok2orHFbLBRXKC5ySM3CHxjuGlpzycfDjupH1PpmU3TanpqoPnqInQRse4lzvUAwXZPPbd9VYYiY0ktaAT3IHdeWwHvymiDdPrdS6c0C24+kWTz0prahzh+Y/lyB7ADx7nyVW9j0pcLto2ovtFA913jugkhDBh7mgN3Yz53ku/pWgdoxhA0DKaKBv2mKijuOn6Gu3VF4utSJ6+Q/m2b3tG3Pt+fP8ArCtDW2iGaslt7zXOpG0e7aGx7t27HuMfp+6lxYCuQMJohWkundDp+aolqXxXF0j2vjM1M0GFzSTlpyeefspqFyigIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD/2Q==">
-
+  <body>
+    <div class="navigation-container">
+      <div class="navigation-content">
+        <div class="eduford">
+          <img src="logo.png" alt="" />
         </div>
+        <ul class="nav-list">
+          <li><a href="#"> Home</a></li>
+          <li><a href="#"> About</a></li>
+          <li><a href="#"> Course</a></li>
+          <li><a href="#"> Blog</a></li>
+          <li><a href="#"> Contact</a></li>
+        </ul>
+      </div>
 
-        <div class="middle">
-<ul class="lists">
-  <li><a class="aa" href="#">Home</a></li>
-  <li> <a class="aa" href="#" >About us</a></li>
-  <li> <a class="aa" href="#" >Fitness Calculator</a></li>
-  <li> <a class="aa" href="#" >Contact Us</a></li>
-
-
-</ul>
-        </div>
-
-        <div class="right">
-<p>call us  now</p>
-<p>Email Us</p>
-
-        </div>
-    </nav>
-
-    <div class="forms">
-<h2 class="aman uu" >Join the best gym of kota gym</h2>
-
-<form action="none" class=" formschild">
-
-<input type="text" class="aman" placeholder="                          Enter your name">
-<input type="text" class="aman" placeholder="                          Enter your Age">
-<input type="text" class="aman" placeholder="                          Enter your Gender">
-<input type="text" class="aman" placeholder="                          Enter your Locality ">
-<input type="button" value="submit" class="aman vikas">            
-
-</form>
-
+      <div class="text-middle">
+        <h1 class="head">World's Biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+          dolores voluptates molestias necessitatibus odit animi non, nobis
+          asperiores tempora dolorum.
+        </p>
+        <button type="submit" class="middle-btn">visit us to know more</button>
+      </div>
     </div>
-</body>
+
+    <div class="courses-container">
+      <h1 class="h1-courses">Courses We offer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus</p>
+
+      <div class="courses-pics">
+        <div>
+          <h1 class="head">Intermediate</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas,
+            similique atque. Necessitatibus fugiat ullam tempore dolore
+            delectus. Quas cumque amet rerum eum magnam quae minima, placeat,
+            veritatis accusamus maxime esse.
+          </p>
+        </div>
+
+        <div>
+          <h1 class="head">Degree</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas,
+            similique atque. Necessitatibus fugiat ullam tempore dolore
+            delectus. Quas cumque amet rerum eum magnam quae minima, placeat,
+            veritatis accusamus maxime esse.
+          </p>
+        </div>
+        <div>
+          <h1 class="head">Post Graduate</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas,
+            similique atque. Necessitatibus fugiat ullam tempore dolore
+            delectus. Quas cumque amet rerum eum magnam quae minima, placeat,
+            veritatis accusamus maxime esse.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="global-campus-container">
+      <div class="global-content">
+        <h1>Our Global Campus</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, at!
+        </p>
+      </div>
+      <div class="pic-global-container">
+        <div class="global-pics1 global-pics"></div>
+        <div class="global-pics2 global-pics"></div>
+        <div class="global-pics3 global-pics"></div>
+      </div>
+    </div>
+
+
+
+    <div class="facilities-container">
+        <div class="facility-text">
+       <h1 class="head">Our Facilities</h1>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nulla.</p>
+        </div>
+
+        <div class="facilities-images">
+            <div class="fac-img1 facimg">
+                <img src="library.png" alt="">
+             <h3  class="facilities-h3">World Class library</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, suscipit.
+
+             </p>
+            </div>
+            <div class="fac-img2 facimg">
+                <img src="basketball.png" alt="">
+                <h3 class="facilities-h3" >Largest Playground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quam.</p>
+
+            </div>
+            <div class="fac-img3 facimg">
+                <img src="cafeteria.png" alt="">
+                <h3  class="facilities-h3">Largest Playground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quam.</p>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="students-container">
+       <div class="faltu"> <h1 class="head">What Our Student Says</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ut.</p>
+        <div class="students-pics">
+
+            <div class="stu1 aman">
+           
+                    <img src="user1.jpg" class="image1 ha" alt="">
+          
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tenetur, praesentium aspernatur sit ea illolor  Lorem ipsum dolor sit amet.  .</p>
+                   <h3 class="amanh"> Aman Deep</h3>
+                   <span class="fa fa-star ckeck">
+
+                   </span>
+                   <span class="fa fa-star ckeck">
+
+                   </span>
+                   <span class="fa fa-star ckeck">
+
+                   </span>
+                   <span class="fa fa-star ckeck">
+
+                   </span>
+                   <span class="fa fa-star ">
+
+                </span>
+                 
+
+            
+            </div>
+            <div class="stu2 aman">
+          
+                    <img src="user2.jpg"  class="image2  ha" alt=""> 
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tenetur, praesentium aspernatur sit ea illo.lor  Lorem ipsum dolor sit amet.  </p>
+                        <h3 class="amanh">Suraj Singh</h3>
+                        <span class="fa fa-star ckeck">
+
+                        </span>
+                        <span class="fa fa-star ckeck">
+
+                        </span>
+                        <span class="fa fa-star ckeck">
+
+                        </span>
+                        <span class="fa fa-star ckeck">
+
+                        </span>
+                        <span class="fa fa-star ckeck">
+
+                        </span>
+                                           
+                         
+                </div>
+            </div>
+           
+        </div>
+
+
+       </div>
+    </div>
+    <div class="enroll-container">
+        <div class="enroll-content">
+            <h1 class="head">Enroll For Out Various online courses </h1>
+            <h1 class="head">Anywhere From the World</h1>
+            <button >Contact Us</button>
+        </div>
+    </div>
+    <div class="about-us">
+      <h1 class="head">About Us</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, eligendi voluptatem illo laborum quam necessitatibus  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, debitis..</p>
+      <div class="pics-about">
+        <div class="insta">
+          <img  class="insta"src="https://zapier-images.imgix.net/storage/developer/30129480e943e5b3e334394168ae16a2.png?auto=format&ixlib=react-9.0.2&ar=undefined&fit=crop&h=60&w=60&q=50&dpr=1" alt="">
+
+          <img  class="insta"src="https://zapier-images.imgix.net/storage/services/f407c31b217aac6e0cd4171092d53a8c.png?auto=format&ixlib=react-9.0.2&ar=undefined&fit=crop&h=60&w=60&q=50&dpr=1" alt="">
+          <img class="insta"src="https://zapier-images.imgix.net/storage/developer/30129480e943e5b3e334394168ae16a2.png?auto=format&ixlib=react-9.0.2&ar=undefined&fit=crop&h=60&w=60&q=50&dpr=1" alt="">
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

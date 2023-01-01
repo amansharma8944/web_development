@@ -1,0 +1,236 @@
+body{
+    
+
+}
+
+
+.navigation-container{
+    width:294%;
+
+}
+.text-middle p {
+    position: relative;
+    width: 727px;
+    text-align: center;
+    top: -19px;
+    font-size: 22px;
+    color: white;
+}
+.middle-btn{
+    width:51vw;
+    height:8vh;
+    font-size: 17px;
+}
+.courses-container {
+    /* min-height: 50vh; */
+    height: 186vh;
+    width: 243vw;
+}
+
+.h1-courses {
+   
+    top: -129vh;
+    font-size: -57px;
+}
+
+.courses-container>p {
+    
+    top: -123vh;
+    font-size:30px;
+}
+.courses-pics{
+    width:241vw;
+    flex-direction: column;
+    justify-content: unset;
+    margin-top: -120vh;
+}
+.courses-pics div {
+    /* border: 1px solid red; */
+    background: rgb(255,192,203,0.3);
+    height: 131px;
+    width: 589px;
+    text-align: center;
+    padding-top: 28px;
+    padding: 135px 18px;
+    margin:78px;
+}
+.courses-pics h1 {
+    font-size: 42px;
+    /* margin-top: -65px; */
+    position: relative;
+    top: -121px;
+}
+
+.courses-pics p{
+    font-size: 35px;
+    position: relative;
+    top: -75px;
+    text-align: justify;
+}
+.global-campus-container {
+    /* height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 123px;
+    text-align: center; */
+    /* flex-direction: column; */
+    width: 239%;
+    margin-top: 89vh;
+}
+.global-content {
+    font-size: 27px;
+}
+.pic-global-container {
+   width:106%;
+}
+.global-pics{
+    height:438px;
+    left:-71px
+}
+
+
+.facilities-container {
+  
+    width: 269%;
+    height:364vh;
+    display: flex;
+   
+}
+.facilities-images {
+   flex-direction: column;
+    width: 255vw;
+    padding-left: 0%;
+    position: relative;
+    left: 109px;
+}
+.facimg img {
+    width: 553px;
+    height: 407px;
+}
+.facimg {
+    /* border: 1px solid red; */
+    height: 620px;
+    display: inline-block;
+    width: 554px;
+    margin: 77px 28px 3px 12px;
+    text-align: left;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.facilities-h3 {
+    font-size: 38px;
+    padding-top: 9px;
+    text-align: center;
+}
+.facimg p {
+    opacity: 0.8;
+    position: relative;
+    top: 24px;
+    font-size: 34px;
+    text-align: center;
+    opacity: 0.9;
+}
+.students-container {
+    width: 249%;
+    height: 180vh;
+    /* border: 1px solid blue; */
+}
+.students-pics {
+    display: flex;
+    flex-direction: column;
+}
+.aman {
+    margin: 106px;
+    /* border: 1px solid red; */
+    height: 49vh;
+    width: 221vw;
+    position: relative;
+}
+
+.ha {
+    border-radius: 67px;
+    height: 97px;
+    margin: 16px 0px 0px 9px;
+    display: inline;
+    position: relative;
+    top: -73px;
+}
+.stu1 p, .stu2 p {
+    width: 458px;
+    margin-left: 22px;
+    text-align-last: inherit;
+    display: inline-block;
+    font-size: 30px;
+}
+.amanh {
+    position: relative;
+    top: 39px;
+    left: 79px;
+    font-size: 45px;
+}
+.fa {
+    position: relative;
+    top: 59px;
+    left: 76px;
+    size: 35px;
+    font-size: 34px;
+}.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 34px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.enroll-container {
+    height: 64vh;
+    margin-top: 510px;
+    width: 282vw;
+    
+    position: relative;
+    left: -93px;
+
+}
+.enroll-content button {
+    width: 146px;
+    margin-left: 135vw;
+    margin-top: 3vh;
+    height: 58px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    top: 59px;
+}
+.enroll-content h1 {
+    font-size: 2rem;
+    margin-left: 58px;
+   
+}
+.about-us {
+    width: 248vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-us p {
+    height: 21vh;
+    width: 204vw;
+    margin-left: 51px;
+    text-align: center;
+    font-size: 29px;
+}
+.facility-text >p {
+    opacity: 0.9;
+    font-size: 26px;
+}
+.head {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 44px;
+}
+.faltu p {
+    padding-top: 20px;
+    font-size: 31px;
+}
