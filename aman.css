@@ -1,87 +1,130 @@
-body {
-  background: url("https://images.pexels.com/photos/116077/pexels-photo-116077.jpeg?auto=compress&cs=tinysrgb&w=2000");
-
-  background-repeat: no-repeat;
-
-  color: white;
+*{
+    margin: 0;
+    padding: 0;
 }
-.left {
-  width: 8px;
+body{
+    overflow: hidden;
 }
-.left img {
-  width: 66px;
-  height: 63px;
-  margin: 7px 0px 0px 22px;
-}
-.right {
+.body-container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 
+}
+
+.nature{
+
+    background: url(bg.png);
     
-}
-.right p {
-  display: inline-block;
+  height: 100%;
+  width:100%;
+  background-size: cover;
+  background-position: center;
 
-  border: 0.5px solid white;
-  border-radius: 5px;
-  margin: 15px 32px 0px 0px;
-  padding: 4px;}
-
-.middle {
-  background-image: rgb(191, 14, 239);
 }
 
-.navi {
-  display: flex;
-  justify-content: space-between;
-}
-.navi li {
-  display: inline-block;
-  padding: 0px 30px;
-  list-style: none;
-}
-.aa {
-  font-style: none;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
-.forms{
+.dragon{
 
-    display: flex;
-    flex-direction: column;
-    border: 3px solid white;
-    height: 337px;
-    width: 740px;
-    margin: 126px 85px;
-    border-radius: 19px;
-    justify-content: center;
+    background: url(dragon.png);
+    height: 13vh;
+    width: 21vh;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 1px;
+    left: 1321px;
+   
+    
+
 }
 
-.formschild{
-
-    display:grid;
-    grid-gap: 2px;
+.move{
+    animation: move 3s linear infinite;
 }
-.aman{
-    color:black;
-    white-space: nowrap;
+.player{
+
+    background: url(dino.png);
+    height: 12vh;
+    width: 21vh;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    left: 0px;
+    /* animation: jump 0.5s linear infinite; */
+    
+
+}
+
+@keyframes move{
+0%{
+    left:200vh;
+}
+    100%{
+       left:-40vh;
+    }
+}
+
+
+
+.jumpp{
+animation: jumpy .5s linear  ;
+}
+
+
+@keyframes jumpy{
+
+0%{
+
+    /* transform: translateY(0px); */
+    bottom:0px;
+}
+50%{
+
+   bottom:500px;
+}
+100%{
+    bottom:0px;
+}
+
+
+}
+
+.forward{
+    animation: forwward 0.5s linear;
+}
+
+
+@keyframes forwward{
+
+  
+
+    100%{
+
+        bottom:400px;
+    }
+}
+
+
+
+
+
+.gameover{
+
+    position: absolute;
+    top:50%;
+    right:50%;
+    font-size: 3rem;
+    
  
-    padding: 5px;
-    width: 303px;
-    border-radius: 9px;
-    margin: 4px 0 0 200px;
-}
-.vikas{
-    width:319px;
-    background-color:aqua;
+    visibility: hidden;
 
 }
-.vikas:hover{
-    transform:scale(1.5,1.5) ;
-    cursor: pointer;
-}
-.uu{
-    color:white;
-}
-.lists li:hover{
-    text-decoration:underline;
+.score{
+    position: absolute;
+    top:0px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
 }
